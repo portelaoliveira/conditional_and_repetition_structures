@@ -1,3 +1,6 @@
+const prompt = require("prompt-sync")();
+let termValue = prompt("What is the value term for Fibonacci sequency? ");
+
 function calculateFibonacciTerm(termNumber) {
   let lastTerm = 1;
   let secondToLast = 0;
@@ -19,7 +22,7 @@ function calculateFibonacciTerm(termNumber) {
 }
 
 console.log(
-  `O valor do termo número 6 da sequencia de fibonacci é ${calculateFibonacciTerm(
+  `O valor do termo número ${termValue} da sequencia de fibonacci é ${calculateFibonacciTerm(
     6
   )}`
 );
