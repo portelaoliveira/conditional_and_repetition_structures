@@ -8,11 +8,8 @@ function calculateFibonacciTerm(termNumber) {
   if (termNumber === 0) {
     return 0;
   }
-  if (termNumber === 1) {
-    return 1;
-  }
-  let currentIteration = 2;
-  while (currentIteration <= termNumber) {
+  let currentIteration = 1;
+  while (currentIteration < termNumber) {
     let auxVar = lastTerm + secondToLast;
     secondToLast = lastTerm;
     lastTerm = auxVar;
