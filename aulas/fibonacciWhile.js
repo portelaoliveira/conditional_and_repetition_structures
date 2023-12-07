@@ -23,6 +23,6 @@ function calculateFibonacciTerm(termNumber) {
 
 console.log(
   `O valor do termo número ${termValue} da sequencia de fibonacci é ${calculateFibonacciTerm(
-    6
+    termValue
   )}`
 );
