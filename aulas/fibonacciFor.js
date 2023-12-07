@@ -8,12 +8,9 @@ function calculateFibonacciTerm(termNumber) {
   if (termNumber === 0) {
     return 0;
   }
-  if (termNumber === 1) {
-    return 1;
-  }
   for (
-    currentIteration = 2;
-    currentIteration <= termNumber;
+    currentIteration = 1;
+    currentIteration < termNumber;
     currentIteration++
   ) {
     let auxVar = lastTerm + secondToLast;
